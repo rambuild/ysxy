@@ -1,0 +1,159 @@
+.school_profile .profile_container{
+	padding: 15px;
+}
+.main_img{
+	width: 140px;
+	height: 40px;
+	background: url('../images/profile.png') no-repeat;
+	background-size: 100% 100%;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+.school_profile ul li a{
+	color: #333;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	background: url('../images/nav_bg.png') no-repeat;
+	background-size: 100% 100%;
+	margin: 2px 0;
+	padding-left: 15px;
+	font-size: 14px;
+}
+.school_profile ul li a.activer{
+	background: url('../images/nav_bg_hov.png') no-repeat;
+	background-size: 100% 100%;
+}
+.school_profile ul li a:hover{
+	background: url('../images/nav_bg_hov.png') no-repeat;
+	background-size: 100% 100%;
+}
+.profile_content{
+	width: 83%;
+}
+.profile_content h3{
+	color: #555;
+	padding-bottom: 1px;
+	border-bottom: solid 2px #555;
+}
+.profile_content h3+p{
+	padding-top: 25px;
+}
+.profile_content p{
+	text-indent: 2em;
+	font-size: 14px;
+	color: #666;
+	padding: 0 5%;
+	text-align: justify;
+}
+/*notice*/
+.notice_content{
+	padding: 1% 0;
+}
+.notice_area{
+	padding: 3% 5% 10%;
+	width: 100%;
+	background: url('../images/content_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+.notice_area h3{
+	text-align: center;
+	color: #333;
+	line-height:35px;
+}
+.notice_area h5{
+	text-align: center;
+	color: #666;
+	line-height: 25px;
+}
+.notice_area p{
+	text-align: justify;
+	text-indent: 2em;
+	color: #666;
+}
+.close{
+	padding-top: 25px;
+	text-align: right;
+}
+.close a{	
+	color: #333;
+	text-decoration: none;
+	font-size: 14px;
+}
+.close a:hover{
+	text-decoration: underline;
+	color: red;
+}
+.profile_content .major{
+	width: 80%;
+	height: 100px;
+	margin: 0 auto;
+}
+.major_list{
+	float: left;
+	width: 150px;
+	line-height: 50px;
+	text-align: center;
+	height: 50px;
+	border-radius: 6px;
+	background: rgb(229, 229, 229);
+	box-shadow: 0 0 8px rgb(229, 229, 229);
+	margin: 25px 18px;
+	cursor: pointer;
+	color: #000;
+}
+.major_list a{
+	ine-height: 50px;
+	color: #000;
+}
+.major_list:hover{
+	background: rgb(172, 72, 91);
+	color: #fff;
+}
+.major_list:hover a{
+	color: #fff;
+}
+.notice_area ul li a{
+	color: #333;
+	font-size: 13px;
+}
+.notice_area ul li a:hover{
+	text-decoration: underline;
+	color: red;
+}
+.notice_area ul li{
+	color: #666;
+	line-height: 25px;
+	font-size: 12px;
+	padding-left: 50px;
+}
+/*artShow*/
+#art_show .profile_content{
+	width: 100%;
+	padding: 0 8%;
+}
+#art_show h5{
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	line-height: 45px;
+}
+#art_show .show_cont_1{
+	background: url('../images/show_1.jpg') no-repeat;
+}
+#art_show .show_cont_2{
+	background: url('../images/show_2.jpg') no-repeat;
+}
+#art_show .show_cont_3{
+	background: url('../images/show_3.jpg') no-repeat;
+}
+#art_show .show_cont{
+	width: 35%;
+	margin: 0 auto;
+	background-size: 100% 100%;
+}
