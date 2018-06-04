@@ -198,6 +198,9 @@ a{
 	clear: both;
 }
 /*academy news*/
+.academy_news{
+	padding-bottom: 5%;
+}
 h2{
 	color: #666;
 }
