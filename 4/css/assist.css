@@ -38,7 +38,8 @@
 }
 .news_contents{
 	background: url('../images/news_bg.png') repeat-y;
-	padding: 3% 5%;
+	padding: 3% 5%;	
+	background-size: cover;
 }
 .news_img_box{
 	width: 500px;
