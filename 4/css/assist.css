@@ -69,6 +69,7 @@
 }
 #stu_activity table{
 	border-collapse: collapse;
+	margin: 0 auto;
 }
 #stu_activity table td{
 	text-align: center;
