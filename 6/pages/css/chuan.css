@@ -1,0 +1,15 @@
+body{
+	background: rgb(25, 25, 45);
+	color:#fff;
+}
+a{
+	color: #fff !important;
+}
+.pics{
+	width: 100%;
+}
+.pics li{
+	width: 32.3%;
+	float: left;
+	margin: 0 0 1% 1%;
+}

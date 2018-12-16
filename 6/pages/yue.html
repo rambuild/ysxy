@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1226">
+  <title>粤菜</title>
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/lucai.css">
+</head>
+<body>
+<div class="container"></div>
+<div class="header">
+	<div class="container">
+		<div class="head">
+		</div>
+		<div class="nav_box">
+	   			<div class="nav">
+				    <div class="nav_bar">
+				      <ul>
+				     	<li><a href="../index.html">首页</a></li>
+				     	<li><a href="./chuan.html">川菜</a></li>
+				     	<li><a href="./lucai.html">鲁菜</a></li>
+				     	<li><a href="./su.html">苏菜</a></li>
+				     	<li><a href="#" class="actives">粤菜</a></li>
+				     	<li><a href="./geren.html">个人</a></li>
+				      </ul>
+				    </div>
+				</div>
+	   </div>
+	</div>
+</div>
+<div class="yue" id='yue' style="margin: 2% 0;">
+	<div class="container">
+		<ul>
+			<li style="background: url(../image/y1.jpg) no-repeat;background-size: 100% 100%"></li>
+			<li style="background: url(../image/y2.jpg) no-repeat;background-size: 100% 100%;"></li>
+			<li style="background: url(../image/y3.jpg) no-repeat;background-size: 100% 100%"></li>
+			<li style="background: url(../image/y4.jpg) no-repeat;background-size: 100% 100%;"></li>
+			<li style="background: url(../image/y5.jpg) no-repeat;background-size: 100% 100%"></li>
+		</ul>	
+		<p style="font-size: 20px;text-align: center;">世界上最治愈的东西，第一是美食，第二才是文字。</p>
+	</div>
+</div>
+<div class="banner_box">
+	<div class="container clearfix">
+		
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<p>&copy;版权 17110110607</p>
+	</div>
+</div>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function(){
+		function setHeight(){
+	        var width = $('#yue ul li').width();
+	            $('#yue ul li').css({
+	           		 "height":width
+	       		 })
+    	}
+    	setHeight();
+	})
+</script>
+<script src="../js/main.js"></script>
+<script src="../js/easySlider.js"></script>
+<script src="../js/swiper.min.js"></script>
+
+</body>
+</html>

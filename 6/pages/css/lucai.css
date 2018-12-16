@@ -1,0 +1,8 @@
+body{
+	background: #eee;
+}
+#yue ul li{
+	float: left;
+	width: 19%;
+	margin: 1% 0.5%;
+}
