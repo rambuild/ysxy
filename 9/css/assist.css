@@ -1,0 +1,84 @@
+.left_nav{
+	float: left;
+}
+.assist_cont .left_nav li{
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: solid 1px rgb(97,160,210); ;
+	padding-left: 15px;
+	background: #fff;
+	cursor: pointer;
+}
+.left_nav ul li:nth-child(1){
+	background: rgb(97,160,210);
+	color: #fff;
+	font-weight: bold;
+	border:none;
+}
+
+.jiuye .left_nav ul li:nth-child(2),.yishutuan .left_nav ul li:nth-child(2){
+	background: #fff;
+	box-shadow: none;
+}
+.jiuye .left_nav ul li:nth-child(4){
+	background: rgb(216, 224, 227);
+	border:none;
+	box-shadow: inset 6px 0 0 rgb(248, 181, 82);
+}
+.li_ac{
+	background: rgb(216, 224, 227) !important;
+	border:none !important;
+	box-shadow: inset 6px 0 0 rgb(248, 181, 82) !important;
+}
+.right_cont{
+	background: #fff;
+	width: 80%;
+	padding:15px 15px 40px 15px;
+	position: relative;
+}
+.cont_head h2 span{
+	padding-bottom: 10px;
+}
+.cont_head h2{
+	color: rgb(97,160,210);
+	font-size: 20px;
+	padding-bottom: 10px;
+	border-bottom: dotted 4px rgb(97,160,210);
+}
+.cont_cont{
+	padding: 25px 20px;
+}
+.cont_cont p{
+	color: #333;
+	line-height: 25px;
+	text-align: justify;
+	text-indent: 2em;
+}
+.cont_cont li span{
+	float: right;
+}
+
+.cont_cont li {
+	height: 45px;
+	line-height: 45px;
+	padding-left: 35px;
+}
+.cont_cont li:hover{
+	color: red;
+}
+.cont_cont li:hover a{
+	color: red;
+}
+.rencai{
+	padding-left: 75px;
+}
+.rencai li{
+	float: left;
+	width: 33.33%;
+	height: 45px;
+	line-height: 45px;
+}
+.cont_cont{
+	margin-bottom: 100px;
+}
