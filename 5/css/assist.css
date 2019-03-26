@@ -1,0 +1,119 @@
+.assist_cont{
+	width: 80%;
+	padding: 20px;
+	border-top: solid 3px #999;
+}
+.assist_cont h2{	
+	height: 47px;
+	line-height: 47px;
+	padding-right: 15px;
+	background: linear-gradient(rgb(230, 240, 242),rgb(221,231,245) 60%,rgb(216, 227, 231));
+	border-radius: 6px;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.assist_cont li {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+}
+.assist_cont li:hover span{
+	color: red;
+}
+.assist_cont li:hover a{
+	color: red;
+}
+.assist_cont li a{
+	color: blue;
+}
+.assist_cont li span{
+	float: right;
+	color: blue;
+}
+.li_acs{
+	background: linear-gradient(rgb(57, 136, 205),rgb(58, 135, 205) 50%,rgb(30,93,172) 50%,rgb(30, 93, 172)) !important;
+	color: #fff !important;
+}
+.banner_box{
+	position: relative;
+}
+.login{
+	position: absolute;
+	right: 90px;
+	bottom: 40px;
+	z-index: 1000;
+	width: 800px;
+	height: 120px;
+	background: #fff;
+	font-size: 30px;
+	line-height: 120px;
+	padding-left: 30px;
+}
+.login:before{
+	content: '';
+	border-style: solid;
+	width: 0;
+	height: 0;
+	bottom: -85px;
+	left: -85px;
+	position: absolute;
+	border-width: 85px;
+	border-color: #fff transparent transparent;
+	transform:rotateZ(-45deg);
+}
+.dot{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/dot.jpg);
+	background-size: 100% 100%;
+}
+.login_box{
+	width: 55%;
+	margin: 0 auto;
+	padding: 25px;
+
+}
+.lg_btn{
+	outline: none;
+	width: 70px;
+	height: 35px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	background: rgb(80, 107, 174);
+	border-radius: 6px;
+}
+.lg_btn:hover{
+	background: rgb(185, 40, 61);
+}
+.hdtp li{
+	margin-bottom: 30px;
+	width: 45%;
+	height: 220px;
+	background: url(../images/aa.gif);
+	background-size: 100% 100%;
+}
+.hdtp li:nth-child(2){
+	background-image: url(../images/ab.gif);
+}
+.hdtp li:nth-child(3){
+	background-image: url(../images/ac.gif);
+}
+.hdtp li:nth-child(4){
+	background-image: url(../images/ad.gif);
+}
+.zpzs{
+	height: 500px;
+	background: url(../images/zpzs.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.fhsy{
+	margin-right: 25px;
+}
+.fhsy a{
+	color: #fff;
+}
+.login2{
+	margin: 0;
+}
