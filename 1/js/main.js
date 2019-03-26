@@ -8,81 +8,60 @@ $(function(){
 			controlsClass: ".controls",
 			paginationClass: ".pagination"					
 	});
-	$('#slider').hover(function(){
-		$('.controls').fadeIn();
-	},function(){
-		$('.controls').fadeOut();
-	})
-	/*导航栏*/
-	$('.nav .nav-list').hover(function(){
-		$(this).find('.nav-items').stop(true).slideDown(200);
-	},function(){
-		$(this).find('.nav-items').stop(true).slideUp(200);
-	})
-	/*导航栏滑块滑动*/
-	$('.nav-list').hover(function(){
-		var leftPos = $(this).offset().left,
-			width = $(this).width(),			
-			contWidth = $('.container').offset().left;
-		$('.sliders').css({
-			left:leftPos-contWidth,
-			width:width
-		})
-	},function(){
-		var leftPos = $('.nav-list').eq(0).offset().left,
-			width = $('.nav-list').eq(0).width(),
-			contWidth = $('.container').offset().left;
-		$('.sliders').css({
-			left:leftPos-contWidth,
-			width:width
-		})
-	})
-	/*时间控件年月日*/
-	function getYear(date){
-		return date+1900;
-	}
-	function RunGLNL2746(){          
-		var today=new Date();          
-		var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
-		var nian = getYear(today.getYear())+"年"+(today.getMonth()+1)+"月" +today.getDate()+"日";
-		$('.time').html(nian+"&nbsp;&nbsp;&nbsp;&nbsp;"+d[today.getDay()]);
-	}RunGLNL2746()
-	setInterval(function(){
-		 RunGLNL2746()
-	},1000)        
-	/*时间控件时分秒*/
-	function formatTime(date){
-		if(date<=12){
-			date = date;
-		}else{
-			date = date-12;
-		}
-		return date;
-	}
-	function addzero(date){
-		if(date<10){
-			date = '0' + date;
-		}
-		return date
-	}
-	function time(){
-		var now = new Date(),
-			now_hour_noformat = now.getHours(),
-			now_hour = formatTime(now.getHours()),
-			now_min = now.getMinutes(),
-			now_sec = now.getSeconds();
-		var noon = '';
-		if(now_hour_noformat > 12){
-			noon = '下午'
-		}else if(now_hour == 12){
-			noon = '中午'
-		}else{
-			noon = '上午'
-		}
-		$('.time_detail').html("&nbsp;&nbsp;"+noon+addzero(now_hour)+':'+addzero(now_min)+':'+addzero(now_sec))
-	}
-	time()
-	setInterval(function(){
-		time()
-	},1000)
+	
+    $('.nav .nav-list').hover(function(){
+        $(this).find('.nav-items').show();
+    },function(){
+        $(this).find('.nav-items').hide();
+    })
+    $('.nav .nav-list').hover(function(){
+        $(this).addClass('actives').siblings().removeClass('actives')
+    }, function(){
+        $('.nav_bar li').removeClass('actives');
+    })
+	/*banner特效*/
+	 function c() {
+        a.bullets.eq(0).addClass("firsrCurrent")
+    }
+    var b, a = new Swiper(".apple-banner .swiper-container", {
+        autoplay: 3e3,
+        speed: 1e3,
+        loop: !0,
+        runCallbacksOnInit: !1,
+        watchSlidesProgress: !0,
+        pagination: ".apple-banner .swiper-pagination",
+        paginationClickable: !0,
+        paginationBulletRender: function(a, b, c) {
+            return '<li class="' + c + '"><span><i></i></span></li>'
+        },
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev",
+        onProgress: function(a) {
+            var b, c, d, e, f, g;
+            for (b = 0; b < a.slides.length; b++) {
+                for (c = a.slides.eq(b), d = c[0].progress, d > 0 ? (e = .9 * d * a.width, scale = 1 - .1 * d, d > 1 && (scale = .9), txtPositionX = 0, txtPositionY = 30 * d + "px") : (e = 0, scale = 1, txtPositionX = 1e3 * -d + "px", txtPositionY = 0), f = c.find(".txt"), g = 0; g < f.length; g++) f.eq(g).transform("translate3d(" + txtPositionX + "," + txtPositionY + ",0)");
+                c.transform("translate3d(" + e + "px,0,0) scale(" + scale + ")")
+            }
+        },
+        onSetTransition: function(a, b) {
+            var c, d, e;
+            for (c = 0; c < a.slides.length; c++) for (slide = a.slides.eq(c), slide.transition(b), d = slide.find(".txt"), e = 0; e < d.length; e++) d.eq(e).transition(b)
+        },
+        onSlideChangeStart: function(a) {
+            a.autoplaying && (a.bullets.eq(a.realIndex - 1).addClass("replace"), a.bullets.eq(a.realIndex - 1).removeClass("current firsrCurrent"), a.bullets.eq(a.realIndex).addClass("current"), 0 == a.realIndex && a.bullets.removeClass("replace"))
+        },
+        onAutoplayStop: function(a) {
+            a.$(".autoplay").removeClass("autoplay")
+        }
+    });
+    for (b = 0; b < a.slides.length; b++) a.slides[b].style.zIndex = b;
+    setTimeout(c, 1)
+	/**********banner*****/
+
+
+    $('#slider').hover(function(){
+        $('.controls').fadeIn();
+    },function(){
+        $('.controls').fadeOut();
+    })
 })
