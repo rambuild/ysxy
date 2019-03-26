@@ -1,0 +1,91 @@
+.assist_cont .left_nav{
+	width: 16%;
+}
+.assist_cont .right_nav{
+	width: 75%;
+	padding-bottom: 100px;
+}
+.left_nav li{
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	margin-bottom: 5px;
+	background: rgb(180, 178, 179);
+	color: #111;
+	cursor: pointer;
+}
+.nav_head{
+	font-size: 20px;
+	background: linear-gradient(rgb(234, 234, 234),rgb(200, 200, 200) 45%,rgb(137, 137, 137))!important;
+}
+.nav_ac{
+	background: rgb(224, 224, 224)!important;
+}
+.nav_cont{
+	color: #111;
+	margin-top: -8px;
+	line-height: 20px;
+	height: auto;
+	padding: 10px 15px;
+	font-size: 15px;
+	background: rgb(180, 178, 179);
+}
+.right_nav p{
+	line-height: 27px;
+	color: #222;
+}
+.pti p{
+	text-indent: 2em;
+	text-align: justify;
+}
+.yemian{
+	margin-top: 50px;
+}
+.yemian span{
+	border: solid 1px #aaa;
+	padding: 0 5px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.yemian span:hover{
+	color: red!important;
+}
+.right_nav ul li span{
+	float: right;
+}
+.right_nav ul li a{
+	color: #333;
+}
+.right_nav ul li{
+	color: #333;
+	line-height: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.right_nav ul li:hover{
+	color: red;
+}
+.right_nav ul li:hover a{
+	color: red;
+}
+.left_nav ul li:hover{
+	background: rgb(224, 224, 224)!important;
+}
+.yst3{
+	color: #666;
+}
+.yst3 h3{
+	text-align: center;
+}
+.conts2{
+	width: 100%!important;
+	margin-bottom: 100px;
+}
+.xyf2{
+	padding: 0 20px;
+}
+.ybh p span:hover{
+	color: red!important;
+	cursor: pointer;
+}
